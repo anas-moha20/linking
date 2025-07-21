@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="so" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Foorno Salaam</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1d4ed8",
+              accent: "#e11d48",
+              yellowish: "#eab308",
+              dark: "#1f2937",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sans bg-white dark:bg-gray-900 dark:text-white">
+    <!-- Madaxa Bogga -->
+    <header
+      class="bg-white dark:bg-gray-900 shadow md:sticky md:top-0 md:z-50 m-0 p-0"
+    >
+      <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+        <!-- Logo -->
+        <img
+          class="logo w-40 md:w-48 h-auto p-0 m-0"
+          src="8cbe7738-e51b-49d5-9788-589923e4d218.jpg"
+          alt="Foorno Salaam Logo"
+        />
+        <!-- Menu Button (Mobile) -->
+        <button
+          id="menu-btn"
+          class="block md:hidden text-2xl"
+          aria-label="Toggle menu"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <!-- Navigation (Desktop) -->
+        <nav
+          id="menu"
+          class="hidden md:flex gap-6 text-sm font-medium"
+        >
+          <a href="#" class="hover:text-yellowish">Home</a>
+          <a href="#about" class="hover:text-yellowish">About</a>
+          <a href="#services" class="hover:text-yellowish">Services</a>
+          <a href="#contact" class="hover:text-yellowish">Contac US</a>
+          <a href="#blog" class="hover:text-yellowish">Blog</a>
+          <a href="#faq" class="hover:text-yellowish"
+            >Faq</a
+          >
+          <button
+            id="dark-toggle"
+            class="text-xl ml-2"
+            aria-label="Toggle dark mode"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+        </nav>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden px-4 pb-4"
+      >
+        <a href="#" class="block py-2 hover:text-yellowish">Home</a>
+        <a href="#about" class="block py-2 hover:text-yellowish">About</a>
+        <a href="#services" class="block py-2 hover:text-yellowish">Services</a>
+        <a href="#contact" class="block py-2 hover:text-yellowish">Contact Us</a>
+        <a href="#blog" class="block py-2 hover:text-yellowish">Blog</a>
+        <a href="#faq" class="block py-2 hover:text-yellowish"
+          >Faq</a
+        >
+        <button
+          id="dark-toggle-mobile"
+          class="text-xl mt-2"
+          aria-label="Toggle dark mode mobile"
+        >
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Qaybta Nagu Saabsan -->
+    <section
+      id="about"
+      class="py-16 px-4 max-w-6xl mx-auto"
+      data-aos="fade-up"
+    >
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <img
+          src="images.jpg"
+          alt="Nagu Saabsan"
+          class="rounded-2xl shadow-lg h-full w-full object-cover"
+        />
+        <div>
+          <h2 class="text-3xl font-bold mb-4">Nagu Saabsan Foorno Salaam</h2>
+          <p class="text-lg leading-relaxed">
+            Foorno Salaam waa ganacsi Soomaaliyeed oo ku takhasusay soo saarista
+            iyo iibinta macmacaanada kala duwan sida rootiyada noocyadooda kala
+            duwan (abuukey, baanaooli, beegar, slice), buskudyada macaan,
+            xalwada dhaqameed iyo doorashooyin badan oo macaan. Waxaan ku faannaa
+            inaan keeno alaab tayo sare leh, cusub oo dhadhan fiican leh, si loo
+            farxiyo macaamiisheena. Waxaan si joogto ah u daryeelaa tayada iyo
+            nadaafadda si aad u hesho macmacaan nadiif ah oo aad ku qanacdo.
+            Foorno Salaam waa meesha ugu habboon ee aad ka heli karto
+            macmacaanada aad jeceshahay, gaar ahaan munaasabadaha gaarka ah iyo
+            isticmaalka maalinlaha ah.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qaybta Adeegyada -->
+    <section
+      id="services"
+      class="py-16 px-4 bg-gray-100 dark:bg-gray-800"
+      data-aos="fade-up"
+    >
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-10 text-center">Adeegyadayada Macmacaanada</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-md text-center"
+          >
+            <img
+              src="b35a3212-7172-4fdc-b482-b52ba11fa39a.jpg"
+              alt="Rootiyada"
+              class="mx-auto mb-4 rounded object-cover h-40 w-full"
+            />
+            <h3 class="text-xl font-semibold mb-2">Rootiyo Kala Duwan</h3>
+            <p>Rooti abuukey, rooti baanaooli, rooti beegar, rooti slice oo dhadhan macaan leh.</p>
+          </div>
+          <div
+            class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-md text-center"
+          >
+            <img
+              src="52fd3572-3c23-4c6c-b406-17e7adf93cce.jpg"
+              alt="Buskudyada"
+              class="mx-auto mb-4 rounded object-cover h-40 w-full"
+            />
+            <h3 class="text-xl font-semibold mb-2">Buskudyada Macaan</h3>
+            <p>Buskudyo kala duwan oo tayo sare leh, ku habboon qadooyinka iyo shaxdaada.</p>
+          </div>
+          <div
+            class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-md text-center"
+          >
+            <img
+              src="83b4bdbc-e2ad-4c2e-87e6-c3c7bd4065a6.jpg"
+              alt="Xalwo iyo Macmacaan"
+              class="mx-auto mb-4 rounded object-cover h-40 w-full"
+            />
+            <h3 class="text-xl font-semibold mb-2">Xalwo iyo Macmacaanada Doorashada</h3>
+            <p>Xalwo dhaqameed, doorashooyin kala duwan iyo macmacaano farabadan oo aad jeceshahay.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qaybta Nala Soo Xiriir -->
+    <section
+      id="contact"
+      class="py-16 px-4 max-w-6xl mx-auto"
+      data-aos="fade-up"
+    >
+      <h2 class="text-3xl font-bold mb-6 text-center">Nala Soo Xiriir</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <form class="space-y-4">
+          <input
+            type="text"
+            placeholder="Magacaaga"
+            class="w-full p-3 rounded border dark:bg-gray-700"
+          />
+          <input
+            type="email"
+            placeholder="Email-kaaga"
+            class="w-full p-3 rounded border dark:bg-gray-700"
+          />
+          <textarea
+            placeholder="Fariintaada"
+            class="w-full p-3 rounded border dark:bg-gray-700"
+          ></textarea>
+          <button
+            type="submit"
+            class="bg-primary text-white px-6 py-2 rounded hover:bg-blue-700"
+          >
+            Dir
+          </button>
+        </form>
+        <div>
+          <iframe
+            class="rounded-xl w-full h-64"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.128129326049!2d45.313182614260944!3d2.046934298065032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3d586fc63b54e7c5%3A0x3558e3c1e0aaf7d7!2sMogadishu!5e0!3m2!1sen!2sso!4v1618312180455!5m2!1sen!2sso"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qaybta Blog -->
+    <section
+      id="blog"
+      class="py-16 px-4 bg-gray-100 dark:bg-gray-800"
+      data-aos="fade-up"
+    >
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-10 text-center">Blog</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <article
+            class="bg-white dark:bg-gray-700 p-4 rounded shadow"
+            tabindex="0"
+          >
+            <h3 class="text-xl font-semibold mb-2">
+              Sida Rootiyada iyo Macmacaanadu u Bedelayaan Nololmaalmeedka
+            </h3>
+            <p class="text-sm">
+              Akhriso sida macmacaanada iyo rootiyada tayo leh u saameynayaan
+              nolosha dadka iyo bulshada.
+            </p>
+          </article>
+          <article
+            class="bg-white dark:bg-gray-700 p-4 rounded shadow"
+            tabindex="0"
+          >
+            <h3 class="text-xl font-semibold mb-2">Qorshahayaga Cusub ee Macmacaanada</h3>
+            <p class="text-sm">
+              Waxaan qorsheynaynaa in aan balaadhino noocyada macmacaanada iyo
+              adeegyada aan bixino.
+            </p>
+          </article>
+          <article
+            class="bg-white dark:bg-gray-700 p-4 rounded shadow"
+            tabindex="0"
+          >
+            <h3 class="text-xl font-semibold mb-2">Sheekooyinka Guusha Macaamiisha</h3>
+            <p class="text-sm">
+              Dhageyso khibradaha isticmaalayaashayada daacadda ah iyo sida ay
+              noogu kalsoon yihiin.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qaybta Su'aalaha Badanaa La Is Weydiiyo -->
+    <section
+      id="faq"
+      class="py-16 px-4 max-w-6xl mx-auto"
+      data-aos="fade-up"
+    >
+      <h2 class="text-3xl font-bold mb-6 text-center">Su'aalaha Badanaa La Is Weydiiyo</h2>
+      <div class="space-y-6">
+        <div>
+          <h4 class="font-semibold">Sideen ku heli karaa macmacaanada Foorno Salaam?</h4>
+          <p>Nala soo xiriir waaxda iibka ama booqo dukaamada iyo goobaha aan alaabta ku bixino.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold">Ma diyaarisaa macmacaano gaar ah munaasabadaha?</h4>
+          <p>Haa, waxaan bixinaa adeegyo gaar ah oo loogu talagalay xafladaha, aroosyada iyo munaasabadaha kale.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold">Sideen u bixiyaa lacagta dalabka?</h4>
+          <p>Waxaad ku bixin kartaa lacag moobil, bangi, ama lacag caddaan ah goobaha aan adeegga ka bixino.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-10">
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-lg font-bold mb-2">Foorno Salaam</h3>
+          <p>
+            Ku xidhnaa Soomaaliya iyo aduunka adeegyo macmacaan oo tayo sare leh
+            oo dhadhan macaan leh.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-2">Xiriir Degdeg ah</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-yellowish">Hoyga</a></li>
+            <li><a href="#about" class="hover:text-yellowish">Nagu Saabsan</a></li>
+            <li><a href="#services" class="hover:text-yellowish">Adeegyada</a></li>
+            <li><a href="#contact" class="hover:text-yellowish">Nala Soo Xiriir</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-2">Nala Soco</h4>
+          <div class="flex gap-4 text-xl">
+            <a href="https://www.facebook.com/profile.php?id=61565602565542&mibextid=ZbWKwL" class="hover:text-yellowish" aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://x.com/abdirahman3872" class="hover:text-yellowish" aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+             <a href="https://wa.me/message/AYEQVO2HN26PJ1" class="hover:text-yellowish" aria-label="WhatsApp"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="https://www.instagram.com/wll_manaxa/profilecard/?igsh=MWE2eWd0bDJncTh3dw==" class="hover:text-yellowish" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-sm mt-8">&copy; 2025 FoornoSalaam.com – Dhamaan xuquuqdu way xifdisan tahay.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000 });
+
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = menuBtn.querySelector("i");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+
+        if (mobileMenu.classList.contains("hidden")) {
+          menuIcon.classList.remove("fa-xmark");
+          menuIcon.classList.add("fa-bars");
+        } else {
+          menuIcon.classList.remove("fa-bars");
+          menuIcon.classList.add("fa-xmark");
+        }
+      });
+
+      const htmlEl = document.documentElement;
+      document.getElementById("dark-toggle").addEventListener("click", () => {
+        htmlEl.classList.toggle("dark");
+      });
+      document
+        .getElementById("dark-toggle-mobile")
+        .addEventListener("click", () => {
+          htmlEl.classList.toggle("dark");
+        });
+    </script>
+  </body>
+</html>
